@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import Credentials from "../../Credentials";
 import Map from '../../components/Map/Map';
 
-const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${Credentials.mapsKey}`;
+const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${process.env.REACT_APP_API_KEY}`;
 
 class Home extends Component {
   render(){
