@@ -1,9 +1,9 @@
 # Treinta Test 
 
-Require node.js
+Requiere node.js
 
-- "npm install" to install the dependencies.
-- "npm run start" to the development environment. 
-- "npm run build" to the production environment.
+- "npm install" para instalar las dependencias.
+- "npm run start" para el ambiente de desarrollo.
+- "npm run build" para el ambiente de producción.
 
-Watch the App in the next URL: https://treinta-test-psi.vercel.app
+Mirar la aplicación en el siguiente link: https://treinta-test-psi.vercel.app
