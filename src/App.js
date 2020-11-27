@@ -1,17 +1,24 @@
 import { GlobalStyle } from "./styles/GlobalStyle";
-import { Header } from './components/Header/Header';
-import  Home  from  './pages/Home/Home';
-import Login from './components/Auth/Login/Login';
-import {Person} from './components/Auth/Login/Login';
-
-
+import { Header } from "./components/Header/Header";
+import { Auth } from './components/Auth/Auth';
+import { Home } from "./pages/Home";
+import { Information } from './/pages/Information';
+import { NavBar } from './components/NavBar/NavBar';
+import { Footer } from "./components/Footer/Footer";
+import { Router } from "@reach/router";
+import { NotFound } from "./pages/NotFound";
 
 export const App = () => (
   <>
     <GlobalStyle />
     <Header />
-    <Home />
-    <Login />
-    <Person />
+    <Auth />
+    <Router>
+      <NotFound default />
+      <Home path="/"/>
+      <Information path="/information" />
+    </Router>
+    <NavBar />
+    <Footer />
   </>
 );
