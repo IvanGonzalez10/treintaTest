@@ -16,7 +16,10 @@ export const Person = () => {
     await firebase.auth().createUserWithEmailAndPassword(email, password);
   };
 
-  firebase.auth().onAuthStateChanged((user) => user && setUser(user.email));
+  firebase.auth().onAuthStateChanged((user) => {
+    user && setUser(user.email);
+    !user && setUser("");
+  });
 
   const Log = async () => {
     await firebase.auth().signInWithEmailAndPassword(email, password);
@@ -118,9 +121,13 @@ const Login = (props) => {
   return (
     <div>
       {user ? (
-        <p style={{ fontSize: "0.8rem", margin: "10px" }}>Bienvenido: {user.displayName} -{user.email}</p>
+        <p style={{ fontSize: "0.8rem", margin: "10px" }}>
+          Bienvenido: {user.displayName} -{user.email}
+        </p>
       ) : (
-        <p style={{ fontSize: "0.8rem", margin: "10px" }}>Inicia sesión con Google</p>
+        <p style={{ fontSize: "0.8rem", margin: "10px" }}>
+          Inicia sesión con Google
+        </p>
       )}
       {user ? (
         <button
@@ -146,7 +153,7 @@ const Login = (props) => {
           }}
           onClick={signInWithGoogle}
         >
-          <MdAccountCircle size="25px"/>
+          <MdAccountCircle size="25px" />
         </button>
       )}
     </div>
