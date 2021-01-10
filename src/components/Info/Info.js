@@ -9,7 +9,7 @@ export const Info = () => {
         Gestiona las transacciones de tu negocio, conoce la utilidad de tu
         negocio en cualquier momento y registra y cobra deudas 3 veces más
         eficazmente. Ayuda a tu negocio a crecer más con Treinta, la aplicación
-        financiera gratuita. ¡Treinta es gratis, seguro y fácil de usar!
+        financiera gratuita. ¡Treinta es gratis, segura y fácil de usar!
       </H2>
     </Div>
   );
