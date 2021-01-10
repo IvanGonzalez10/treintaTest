@@ -40,7 +40,7 @@ export const Person = () => {
             }}
             htmlFor="email"
           >
-            Correo
+            Correo:
           </label>
           <input
             style={{
@@ -60,7 +60,7 @@ export const Person = () => {
             }}
             htmlFor="password"
           >
-            Password
+            Password:
           </label>
           <input
             style={{
